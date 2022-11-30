@@ -157,11 +157,13 @@ WantedBy=multi-user.target
   1. The server block, Caddyfile, will be placed in `/etc/caddy/`
   2. The node service file will be placed in `/etc/systemd/system`
   3. Run the following commands to ensure they are running:
-      `sudo systemctl daemon-reload`
-      `sudo systemctl enable Caddyfile.service`
-      `sudo systemctl enable node_thingy.service`
-      `sudo systemctl start Caddyfile.service`
-      `sudop systemctl start node_thingy.service`
+      ```
+      sudo systemctl daemon-reload
+      sudo systemctl enable Caddyfile.service
+      sudo systemctl enable node_thingy.service
+      sudo systemctl start Caddyfile.service
+      sudo systemctl start node_thingy.service
+      ```
 
 ## Step 9
 
