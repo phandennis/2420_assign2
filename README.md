@@ -67,8 +67,26 @@ In your local machine:
   3. Inside `html`, create an index html that is simple and complete (with doctype, head, body)
   4. Inside of src, create an index.js file like below:
 
-![index.js file](/images/index.js.png)
-  
+```
+// Require the framework and instantiate it
+const fastify = require('fastify')({ logger: true })
+
+// Declare a route
+fastify.get('/api', async (request, reply) => {
+  return { hello: 'Server 2' }
+})
+
+// Run the server!
+const start = async () => {
+  try {
+    await fastify.listen({ port: 5050, host: '127.0.0.1' })
+  } catch (err) {
+    fastify.log.error(err)
+    process.exit(1)
+  }
+}
+start()
+```
   5. Test your server locally by trying to view your index.html with index.js
   6. Move html and src directory to both of the Digital Ocean servers.  
      sfpt the files by running `sfpt -i <ssh_key_path> <user>@<ip>`  
