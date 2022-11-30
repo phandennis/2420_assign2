@@ -35,8 +35,8 @@ where <email> = your email address
 6. Run the command passwd <name> to set your password for the regular user
 7. Run `exit`
 
-8. ssh -i .\.ssh\<key> <name>@<ip>
-9. sudo vim /etc/ssh/sshd_config  
+8. `ssh -i .\.ssh\<key> <name>@<ip>`
+9. `sudo vim /etc/ssh/sshd_config`  
 `SET PermitRootLogin no`
 10. Run the command `sudo systemctl restart ssh`
 11. Run `exit`
