@@ -111,7 +111,7 @@ In your local machine:
   2. Refresh the ip address of the load balancer with `/api` to see the hello message in `/index.js`.
   
   ![s1](/images/server1.png)
-  ![s2](/images/server2.png)
+  ![s2](/images/server22.png)
   ![api1](/images/server1api.png)
   ![api2](/images/server2api.png)
   
