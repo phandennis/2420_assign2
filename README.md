@@ -74,12 +74,13 @@ then run the command `put -r <directory>`
 ## Step 5
 
 1. Write your Caddyfile on your local machine  
-`http://<ip_of_load> {  
+```
+  http://<ip_of_load> {  
     root * /var/www
     reverse_proxy /api localhost:5050  
     file_server
 }  
-`
+```
 
 ## Step 6
 
