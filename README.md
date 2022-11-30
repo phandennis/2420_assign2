@@ -53,7 +53,7 @@ In the droplets, we will install a web server. We will use caddy.
 6. Create a Caddyfile in /etc/caddy with `sudo vim /etc/caddy/Caddyfile`
 7. Create a service file to run `sudo caddy run --config /etc/caddy/Caddyfile`
 
-![caddy file image]('./images/caddyfile.png')
+![caddy file image]('./images/caddyfileservice.png')
 
 ## Step 4
 
