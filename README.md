@@ -129,7 +129,26 @@ start()
   
 ## Step 7
   
-  1. Write the service file to run the node application
+  1. Write the service file to run the node application like below:
+  
+  ```
+[Unit]
+Description=Yes please work now
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/home/dennis/.volta/bin/node /home/dennis/2420-assign-two/src/index.js
+User=dennis
+Group=dennis
+Restart=always
+RestartSec=10
+TimeoutStopSec=90
+SyslogIdentifier=node_thingy
+
+[Install]
+WantedBy=multi-user.target
+```
   
 ## Step 8
   
