@@ -62,17 +62,19 @@ In the droplets, we will install a web server. I will use caddy as I did nginx l
 
 In your local machine:
 
-1. Make a directory called `2420-assign-two`
-2. Inside this directory, create `html` and `src`
-3. Inside `html`, create an index html that is simple and complete (with doctype, head, body)
-4. Inside of src, create an index.js file like below:
+  1. Make a directory called `2420-assign-two`
+  2. Inside this directory, create `html` and `src`
+  3. Inside `html`, create an index html that is simple and complete (with doctype, head, body)
+  4. Inside of src, create an index.js file like below:
 
 ![index.js file](/images/index.js.png)
   
-5. Test your server locally by trying to view your index.html with index.js
-6. Move html and src directory to both of the Digital Ocean servers.  
-sfpt the files by running `sfpt -i <ssh_key_path> <user>@<ip>`  
-then run the command `put -r <directory>`
+  5. Test your server locally by trying to view your index.html with index.js
+  6. Move html and src directory to both of the Digital Ocean servers.  
+     sfpt the files by running `sfpt -i <ssh_key_path> <user>@<ip>`  
+     then run the command `put -r <directory>`
+  7. Make sure the `index.html` is in `/var/www` in both servers
+  8. Customize each index/html to differentiate them.
 
 ## Step 5
 
@@ -86,9 +88,30 @@ then run the command `put -r <directory>`
 ```
 
 ## Step 6
-
+  
+  Run the following commands:
+  1. `curl https://get.volta.sh | bash`
+  2. `source ~/.bashrc`
+  3. `volta install node`
+  4. `volta install npm`
+  
 ## Step 7
-
+  
+  1. Write the service file to run the node application
+  
 ## Step 8
+  
+  1. The server block, Caddyfile, will be placed in `/etc/caddy/`
+  2. The node service file will be placed in `/etc/systemd/system`
 
 ## Step 9
+
+   To test:
+  1. Refresh the ip address of the load balancer to see the index.html in `/var/www`
+  2. Refresh the ip address of the load balancer with `/api` to see the hello message in `/index.js`.
+  
+  ![s1](/images/server1.png)
+  ![s2](/images/server2.png)
+  ![api1](/images/server1api.png)
+  ![api2](/images/server2api.png)
+  
