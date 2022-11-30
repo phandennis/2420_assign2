@@ -107,10 +107,12 @@ In your local machine:
 ## Step 9
 
    To test:
-  1. Refresh the ip address of the load balancer to see the index.html in `/var/www`
-  2. Refresh the ip address of the load balancer with `/api` to see the hello message in `/index.js`.
+  1. Refresh the ip address of the load balancer`
+  2. Refresh the ip address of the load balancer with `/api`
   
-  ![s1](/images/server1.png)
+  The results should look simliar to what you see below:
+  
+  ![s1](/images/server11.png)
   ![s2](/images/server22.png)
   ![api1](/images/server1api.png)
   ![api2](/images/server2api.png)
