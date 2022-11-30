@@ -150,6 +150,7 @@ SyslogIdentifier=node_thingy
 [Install]
 WantedBy=multi-user.target
 ```
+ 2. Customize the values to fit where you place `index.js` and the home of the user and your `user` and `group` and what you call the service in `SyslogIdentifier`
   
 ## Step 8
   
