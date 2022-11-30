@@ -145,7 +145,7 @@ Group=dennis
 Restart=always
 RestartSec=10
 TimeoutStopSec=90
-SyslogIdentifier=node_thingy
+SyslogIdentifier=hello_web
 
 [Install]
 WantedBy=multi-user.target
@@ -161,8 +161,8 @@ WantedBy=multi-user.target
       sudo systemctl daemon-reload
       sudo systemctl enable Caddyfile.service
       sudo systemctl enable node_thingy.service
-      sudo systemctl start Caddyfile.service
-      sudo systemctl start node_thingy.service
+      sudo systemctl start caddy.service
+      sudo systemctl start hello_web.service
       ```
 
 ## Step 9
