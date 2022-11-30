@@ -56,7 +56,21 @@ In the droplets, we will install a web server. I will use caddy as I did nginx l
 6. Create a Caddyfile in /etc/caddy with `sudo vim /etc/caddy/Caddyfile`
 7. Create a service file to run Caddyfile automatically
 
-![caddy file image](/images/caddyfile.service.png)
+  ```
+[Unit]
+Description=Serve HTML in /var/www using caddy
+After=network.target
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/caddy run --config /etc/caddy/Caddyfile
+ExecReload=/usr/bin/caddy reload --config /etc/caddy/Caddyfile
+TimeoutStopSec=5
+KillMode=mixed
+
+[Install]
+WantedBy=multi-user.target
+```
 
 ## Step 4
 
