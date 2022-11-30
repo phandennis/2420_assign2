@@ -1,4 +1,6 @@
-# 2420 Assignment 2
+# 2420_assign2 - VPC with Digital Ocean Infrastrucutre
+
+This README.md assumes basic knowledge about .gitignore and how to create the Digital Ocean Infrastructure
 
 # Author  
 Dennis Phan
