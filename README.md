@@ -126,6 +126,7 @@ start()
   2. `source ~/.bashrc`
   3. `volta install node`
   4. `volta install npm`
+  5. `npm i fastify`
   
 ## Step 7
   
