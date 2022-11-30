@@ -1,5 +1,8 @@
 # 2420 Assignment 2
 
+# Author  
+Dennis Phan
+
 ## Step 1: Creating the Digital Ocean Infrastructure 
 
 1. Create a VPC Network  and rename it `vpc-2420`
@@ -43,7 +46,7 @@ where <email> = your email address
 
 ## Step 3: Installing Web Server
 
-In the droplets, we will install a web server. We will use caddy.
+In the droplets, we will install a web server. I will use caddy as I did nginx last week.
 
 1. Download the tar.gz file for caddy by running `wget https://github.com/caddyserver/caddy/releases/download/v2.6.2/caddy_2.6.2_linux_amd64.tar.gz`
 2. Unarchive the file with `tar xvf caddy_2.6.2_linux_amd64.tar.gz`
