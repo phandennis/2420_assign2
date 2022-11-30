@@ -51,7 +51,7 @@ In the droplets, we will install a web server. We will use caddy.
 4. Run `sudo cp caddy /usr/bin`
 5. Create a 'caddy' directory in /etc/ with `sudo mkdir /etc/caddy`
 6. Create a Caddyfile in /etc/caddy with `sudo vim /etc/caddy/Caddyfile`
-7. Create a service file to run `sudo caddy run --config /etc/caddy/Caddyfile`
+7. Create a service file to run Caddyfile automatically
 
 ![caddy file image](/images/caddyfile.service.png)
 
@@ -64,7 +64,8 @@ In your local machine:
 3. Inside `html`, create an index html that is simple and complete (with doctype, head, body)
 4. Inside of src, create an index.js file like below:
 
-[!index.js file]('./images/index.js.png')
+![index.js file](/images/index.js.png)
+  
 5. Test your server locally by trying to view your index.html with index.js
 6. Move html and src directory to both of the Digital Ocean servers.  
 sfpt the files by running `sfpt -i <ssh_key_path> <user>@<ip>`  
@@ -75,7 +76,7 @@ then run the command `put -r <directory>`
 1. Write your Caddyfile on your local machine  
 `http://<ip_of_load> {  
     root * /var/www
-    reverse_proxy /app localhost:3000  
+    reverse_proxy /api localhost:5050  
     file_server
 }  
 `
