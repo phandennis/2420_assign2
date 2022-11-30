@@ -4,14 +4,23 @@
 
 1. Create a VPC Network  and rename it `vpc-2420`
 
+![VPC](/images/vpc-2420.png)
+
 Note: Remember which server your VPC Network is on, as it will be the same server location for the droplets and load balancer  
   
 2. Create 2 new droplets called `ubuntu-1` and `ubuntu-2` with the new VPC Network with a tag called `web`
 
+![droplets](/images/droplets.png)
+
 Note: the tag will be used to apply the load balancer and firewall to the droplets with the same tag
 
 3. Create a load balancer on the same VPC Network and select the tag `web`
+
+![load balancer](/images/loadbalancer.png)
+
 4. Create a firewall via the Cloud on Digital Ocean and select the tag `web`
+
+![firewall](/images/fw-2420.png)
 
 ## Step 2: Creating Regular Users 
 
