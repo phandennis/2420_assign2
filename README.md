@@ -161,10 +161,8 @@ WantedBy=multi-user.target
   3. Run the following commands to ensure they are running:
       ```
       sudo systemctl daemon-reload
-      sudo systemctl enable Caddyfile.service
-      sudo systemctl enable node_thingy.service
-      sudo systemctl start caddy.service
-      sudo systemctl start hello_web.service
+      sudo systemctl reload Caddyfile.service
+      sudo systemctl reload hello_web.service
       ```
 
 ## Step 9
