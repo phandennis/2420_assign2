@@ -123,6 +123,8 @@ start()
 
 ## Step 6
   
+  Perform these steps in each server.
+  
   Run the following commands:
   1. `curl https://get.volta.sh | bash`
   2. `source ~/.bashrc`
@@ -155,6 +157,8 @@ WantedBy=multi-user.target
  2. Customize the values to fit where you place `index.js` and the home of the user and your `user` and `group` and what you call the service in `SyslogIdentifier`
   
 ## Step 8
+  
+  In each server:
   
   1. The server block, Caddyfile, will be placed in `/etc/caddy/`
   2. The node service file will be placed in `/etc/systemd/system`
