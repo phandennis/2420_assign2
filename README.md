@@ -178,3 +178,8 @@ WantedBy=multi-user.target
   ![api1](/images/server1api.png)
   ![api2](/images/server2api.png)
   
+  # Try it yourself
+  
+  Visit `24.199.69.231` and refresh repeatedly until you see the different messages above
+  Visit `24.199.69.231/api` as well 
+  
